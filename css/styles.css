@@ -1,0 +1,35 @@
+* {
+
+}
+
+nav {
+text-align: right;
+font-size: large;
+background-color:#180C01;
+opacity: 0.5;
+height: 40px;
+width:100%;
+margin-top: 0%;
+}
+
+body {
+    text-align: center;
+    color: azure;
+    background-position-x: center;
+    /* background-size:cover; */
+
+}
+
+p {
+    color: black;
+}
+
+.second {
+    background-color:#180C01;
+    opacity:0.7;
+    
+}
+
+footer {
+    background-color:#180C01; 
+}
