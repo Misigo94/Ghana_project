@@ -2,8 +2,12 @@
 
 }
 
+head{
+width :100%;
+}
+
 nav {
-text-align: right;
+text-align:center;
 font-size: large;
 background-color:#180C01;
 opacity: 0.5;
@@ -20,16 +24,29 @@ body {
 
 }
 
+a {
+    color:whitesmoke;
+    padding-left: 20%;
+}
+
+a:hover{
+    color :#C15F06;
+}
+
 p {
     color: black;
 }
 
 .second {
     background-color:#180C01;
-    opacity:0.7;
+    opacity:0.8;
     
 }
 
 footer {
     background-color:#180C01; 
+    height: 40px;
+    padding-top:10px;
+    opacity:0.7;
+    font-size: 1em;
 }
