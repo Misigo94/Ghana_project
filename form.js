@@ -4,11 +4,13 @@ function reset() {
 
 function userForm() {
     let gender = document.getElementById("this_gender").value;
-    let bithday = document.getElementById("user_date").value;
-   if (this_gender == "") {
-       console.log("You must choose a gender");
+    let birthday = document.getElementById("user_date").value;
+    console.log(birthday);
+    console.log(gender);
+   if (gender == "") {
+       alert("You must choose a gender");
    }
-   if(user_date == "") {
+   if(birthday == "") {
        alert("You must pick a date");
    
     }
@@ -24,8 +26,8 @@ const dayArray = [
 ];
 
 // check for the day
-const d = new Date(user_date);
-let day = d.getDate();
+const d = new Date(birthday);
+let day = d.getDay();
 let year = d.getFullYear();
 
 let week_day = dayArray[day][0];
@@ -34,14 +36,29 @@ let female_Name = dayArray[day][2];
 const output = document.getElementById("text");
 
 if (gender == "male") {
-    output.innerHTML = "You were born in a " + dayArray +
-    "and your Akan name is " + male_Name;
+    output.innerHTML = "You were born in a  " + week_day +
+    " and your Akan name is " + male_Name;
 }
     else if (
-        output.innerHTML = "You were born in a " + dayArray +
-        "and your Akan name is " + female_Name
-    )
+        gender == "female"
+    ) {
+        output.innerHTML = "You were born in a  " + week_day +
+        " and your Akan name is " + female_Name
+    }
+
+if (year >2022) {
+    alert("Choose a valid year")
+}
+    else if ( year < 1940) {
+        alert("Choose a valid year")
+    }
+
+if (day < 0) {
+    
+}
+
+
 
  reset();
- userForm();
+ 
 }
