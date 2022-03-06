@@ -25,12 +25,6 @@
     
     <section class ="second">
         <h2 class = "h2">FORM SECTION</h2>
-        <!-- <form action="Choose a gender"> -->
-            <!-- <h3>Choose a gender</h3>
-            <input type="radio" id="Gender" name ="male" value="male">
-            <label for="Gender">Male</label> <br>
-            <input type="radio" id="Gender" name = "female" value = "female"> 
-            <label for="Gender">Female</label> -->
             <form id="user_form">
              <div class="">
                  <p class ="title">Gender</p>
@@ -40,31 +34,10 @@
                      <option class = "text" value="female">Female</option>
                  </select>
              </div>
+             <h3>Put in your date of birth</h3>
+             <input type="date" id="user_date"><br><br>
+             <button type="button" onclick="userForm()">Submit</button> 
             </form>
-
-
-            <h3>Put in your date of birth</h3>
-            <div class = "">
-                <p> Birthday class = "title">Birthday</p>
-               
-                <br>
-                <br>
-                <form onsubmit="alert('submit!')>
-                    <input type="text" value="text"><br>
-                     <input type="date" value="" name="birthday" id ="user_date"><br><br>
-                    <input type="submit" value="Submit">
-                  </form>
-                <!-- <button type="button" onclick="user_form">Submit</button>  -->
-                
-            </div>
-            <!-- <select id="user_date" required>
-                <input type="date">
-            <label for="Date"></label> <br>
-            <br>
-            <br> -->
-            <!-- <input type="submit" value="SUBMIT"> -->
-            </select>
-            
             
             <div class = "display">
                 <p id="text"></p>
