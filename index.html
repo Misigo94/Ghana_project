@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/styles.css" type = "text/css">
     <title>Ghana Page</title>
     <nav>
-        <a href="">Home</a>
+        <!-- <a href="">Home</a>
         <a href="">Bithday</a>
-        <a href="">Contact</a>
+        <a href="">Contact</a> -->
     </nav>  
 </head>
 <body background="set.jpeg">
-    section<div class="fir"></div>
+    <section<div class="fir"></div>
         <h1>WELCOME TO THE GHANA PAGE</h1>
     <p class="par">This is a fun page page that is aimed to determine
         the names of the users in the Ghanian culture. <br>
@@ -25,12 +25,23 @@
     
     <section class ="second">
         <h2 class = "h2">FORM SECTION</h2>
-        <form action="Choose a gender">
-            <h3>Choose a gender</h3>
+        <!-- <form action="Choose a gender"> -->
+            <!-- <h3>Choose a gender</h3>
             <input type="radio" id="Gender" name ="male" value="male">
             <label for="Gender">Male</label> <br>
             <input type="radio" id="Gender" name = "female" value = "female"> 
-            <label for="Gender">Female</label>
+            <label for="Gender">Female</label> -->
+            <form id="my_form">
+             <div class="">
+                 <p class ="title">Gender</p>
+                 <select id="this_gender" required>
+                     <option value="">Choose your gender</option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                 </select>
+             </div>
+            </form>
+
 
             <h3>Put in your date of birth</h3>
             <input type="date">
