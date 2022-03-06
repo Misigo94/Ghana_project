@@ -44,9 +44,17 @@
 
 
             <h3>Put in your date of birth</h3>
-            <input type="date">
+            <select id="user_date" required>
+                <input type="date">
             <label for="Date"></label>
-            <input type="submit" value="SUBMIT">
+            <!-- <input type="submit" value="SUBMIT"> -->
+            <button type="button" onclick="my_form">Submit</button>
+            </select>
+            
+            <div class = "display">
+                <p id="text"></p>
+                
+            </div>
         </form>
     </section>
     <br>
@@ -56,5 +64,7 @@
     <br>
     <br>
     <footer>@ Ghana page.com 2022</footer>
+
+    <script src="form.js"></script>
 </body>
 </html>
