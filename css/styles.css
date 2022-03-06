@@ -43,6 +43,11 @@ p {
     color: black;
 }
 
+#text {
+    color:white;
+    font-size:2em;
+}
+
 .second {
     background-color:#180C01;
     opacity:0.8;
