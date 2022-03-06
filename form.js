@@ -6,7 +6,7 @@ function userForm() {
     let gender = document.getElementById("this_gender").value;
     let bithday = document.getElementById("user_date").value;
    if (this_gender == "") {
-       alert("You must choose a gender");
+       console.log("You must choose a gender");
    }
    if(user_date == "") {
        alert("You must pick a date");
@@ -33,5 +33,15 @@ let male_Name = dayArray[day][1];
 let female_Name = dayArray[day][2];
 const output = document.getElementById("text");
 
+if (gender == "male") {
+    output.innerHTML = "You were born in a " + dayArray +
+    "and your Akan name is " + male_Name;
+}
+    else if (
+        output.innerHTML = "You were born in a " + dayArray +
+        "and your Akan name is " + female_Name
+    )
+
  reset();
+ userForm();
 }
