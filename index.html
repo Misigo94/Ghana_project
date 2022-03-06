@@ -31,25 +31,35 @@
             <label for="Gender">Male</label> <br>
             <input type="radio" id="Gender" name = "female" value = "female"> 
             <label for="Gender">Female</label> -->
-            <form id="my_form">
+            <form id="user_form">
              <div class="">
                  <p class ="title">Gender</p>
                  <select id="this_gender" required>
                      <option value="">Choose your gender</option>
-                     <option value="male">Male</option>
-                     <option value="female">Female</option>
+                     <option class ="text" value="male">Male</option>
+                     <option class = "text" value="female">Female</option>
                  </select>
              </div>
             </form>
 
 
             <h3>Put in your date of birth</h3>
-            <select id="user_date" required>
+            <div class = "">
+                <p><Birthday class = "title">Birthday</p>
+                <input type="date" value="" name="birthday" id ="birthday"><br>
+                <br>
+                <br>
+                <button type="button" onclick="user_form">Submit</button> 
+                
+            </div>
+            <!-- <select id="user_date" required>
                 <input type="date">
-            <label for="Date"></label>
+            <label for="Date"></label> <br>
+            <br>
+            <br> -->
             <!-- <input type="submit" value="SUBMIT"> -->
-            <button type="button" onclick="user_form">Submit</button>
             </select>
+            
             
             <div class = "display">
                 <p id="text"></p>
