@@ -1,3 +1,7 @@
+function reset() {
+    document.getElementById("user_form").reset();
+}
+
 function userForm() {
     let gender = document.getElementById("this_gender").value;
     let bithday = document.getElementById("user_date").value;
@@ -5,9 +9,9 @@ function userForm() {
        alert("You must choose a gender");
    }
    if(user_date == "") {
-       alert("You mus pick a date");
-   }
-}
+       alert("You must pick a date");
+   
+    }
 
 const dayArray = [
     ["Sunday", "Kwasi", "Akosua"],
@@ -19,10 +23,15 @@ const dayArray = [
     ["Saturday", "Kwame", "Ama"],
 ];
 
-// //conditional statements for error handling
-// if(this_gender == "") {
-//     alert("Please choose a gender");
-// }
-// else if ()
-    
-// }
+// check for the day
+const d = new Date(user_date);
+let day = d.getDate();
+let year = d.getFullYear();
+
+let week_day = dayArray[day][0];
+let male_Name = dayArray[day][1];
+let female_Name = dayArray[day][2];
+const output = document.getElementById("text");
+
+ reset();
+}
