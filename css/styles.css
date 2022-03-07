@@ -36,11 +36,11 @@ a:hover{
     color :#C15F06;
 }
 
-p {
+p,{
     color: black;
 }
 
-#text {
+#text, .title {
     color:white;
     font-size:2em;
 }
@@ -54,7 +54,7 @@ p {
 footer {
     background-color:#180C01; 
     height: 75px;
-    padding-top:10px;
+    padding-top:11px;
     opacity:0.7;
     font-size: 1em;
 }
