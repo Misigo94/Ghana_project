@@ -54,7 +54,7 @@ if (year >2022) {
     }
 
 if (day < 0) {
-    
+    alert("Choose a valid date");  
 }
 
 
